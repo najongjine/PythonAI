@@ -149,7 +149,7 @@ print("내일가격: ",pred_price)
 pred_price=pred_price.astype('float64')
 print("pred_price data type: ",pred_price.dtype) 
 print("pred price[0]: ",pred_price[0])
-x=pred_price[0]
+x=pred_price[0].astype('number')
 last_60_days.append(x)
 last_60_days_scaled = scaler.transform(last_60_days)
 #Create an empty list
